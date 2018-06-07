@@ -1,36 +1,35 @@
 source 'https://rubygems.org'
 
-
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0'
-# Use Uglifier as compressor for JavaScript assets
+gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootstrap-sass', '~> 3.3.7'
+
+gem 'bootstrap-sass', '~> 3.3.6'
 gem 'devise'
-gem 'rake', '< 11.0'
 gem 'toastr-rails'
 gem 'omniauth-facebook'
-gem "paperclip", "~> 6.0.0"
+gem "paperclip", "~> 5.0.0.beta1"
 gem 'dropzonejs-rails'
-gem "figaro", "~>1.1.0"
+gem "figaro", "~> 1.1.0"
 gem 'aws-sdk', '~> 2.3'
 
-group :production do
+
+
+group :production do 
 	gem 'pg'
 	gem 'rails_12factor'
 end
 
-group :development, :test do
+group :development, :test do 
 	gem 'sqlite3'
 end
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
